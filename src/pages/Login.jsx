@@ -14,7 +14,7 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const from = location.state?.from?.pathname || "/dashboard";
+    // const from = location.state?.from?.pathname || "/dashboard";
     console.log('state in the location login page', location.state)
 
     // useEffect(() => {
@@ -40,7 +40,8 @@ const Login = () => {
                         popup: 'animate__animated animate__fadeOutUp'
                     }
                 });
-                navigate(from, { replace: true });
+                // navigate(from, { replace: true });
+                navigate("/dashboard")
             })
     }
 
